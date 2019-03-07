@@ -20,7 +20,7 @@ body {
 
 .phone,
 .tablet,
-.desctop {
+.desktop {
     background-color: #fff;
     box-shadow: 13px 13px 32px 0 rgba(242, 57, 90, .3);
     position: absolute;
@@ -30,7 +30,7 @@ body {
 
 .section:hover .phone,
 .section:hover .tablet,
-.section:hover .desctop {
+.section:hover .desktop {
     transform: translateY(10px) rotateY(-15deg);
 }
 
@@ -54,7 +54,7 @@ body {
     transition-delay: 0.4s;
 }
 
-.desctop {
+.desktop {
     width: 680px;
     height: 480px;
     background: #fff url('http://jquerykiller.ru/img/desktop.svg');
