@@ -48,51 +48,53 @@ body {
     transform: translateY(5px);
 }
 
-.menu-btn_active span{
-    height: 0;
-}
-
 .menu-btn_active span:before {
-    /*transform: rotate(-35deg);
+    transform: rotate(-35deg);
     width: 10px;
-    transform-origin: left bottom; Откуда начинать трансформацию*/
-    transform: rotate(45deg);
+    transform-origin: left bottom;
 }
 
 .menu-btn_active span:after {
-    /* transform: rotate(35deg);
+    transform: rotate(35deg);
     width: 10px;
-    transform-origin: left top; */
-    transform: rotate(-45deg);
+    transform-origin: left top;
 }
 
 .menu-block {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.menu-nav {
-    background-color: #fff;
-    height: 50px;
-
-}
-
-.menu-nav__link {
-    display: inline-block;
+.menu-nav a {
     text-decoration: none;
-    color: #fff;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 100;
+    display: inline-block;
     margin-right: 20px;
+    transition: 1s;
 }
 
-.menu-nav__link {
-    transition: 0.5s;
+.menu-nav {
+    transition: 0.2s;
+    transform: scaleX(0) translateX(0%);
     transform-origin: right center;
-    transform: translateX(50%);
     opacity: 0;
+    visibility: hidden;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: -25px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
-.menu-nav__link_active {
-    transform: translateX(0%);
+.menu-nav_active {
+    transform: scaleX(1) translateX(0%);
     opacity: 1;
+    visibility: visible;
 }
